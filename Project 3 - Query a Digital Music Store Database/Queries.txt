@@ -1,0 +1,41 @@
+/* Query 1 - query used for first insight */
+WITH t1 AS 
+(SELECT c.Country, ROUND(SUM(i.Total)) as TotalSpent,
+c.FirstName,c.LastName,c.CustomerId
+FROM Invoice i
+JOIN Customer c ON c.CustomerId = i.CustomerId
+GROUP BY c.customerId)
+
+SELECT * FROM t1
+JOIN (
+SELECT Country, MAX(TotalSpent) as MaxTotalSpent,FirstName,LastName,CustomerId 
+ FROM t1
+GROUP BY Country
+) AS t2
+ON t1.Country = t2.Country
+WHERE t1.TotalSpent = t2.MaxTotalSpent
+ORDER BY TotalSpent DESC LIMIT 10
+
+/* Query 2 - query used for second insight */
+SELECT c.Email,c.Country,COUNT(i.Total) AS Total, c.FirstName,c.LastName,g.Name
+FROM Invoice as i
+JOIN Customer as c ON c.CustomerId = i.CustomerId
+JOIN InvoiceLine as l ON i.InvoiceId = l.InvoiceId 
+JOIN Track as t ON t.TrackId = l.TrackId 
+JOIN Genre as g ON g.GenreId = t.GenreId 
+WHERE g.Name = "Rock"
+GROUP BY c.Country
+ORDER BY Total D
+
+/* Query 3 - query used for third insight */
+SELECT e.*, COUNT(i.InvoiceId) AS 'Total Number of Sales'
+FROM Employee AS e
+  JOIN Customer AS c ON e.EmployeeId = c.SupportRepId
+	JOIN Invoice AS i ON i.CustomerId = c.CustomerId
+GROUP BY e.EmployeeId;
+
+/* Query 4 - query used for Fourth insight */
+SELECT e.FirstName,e.LastName, COUNT(c.CustomerId) AS 'TotalCustomers'
+FROM Employee AS e
+JOIN customer AS c ON e.EmployeeId = c.SupportRepId
+GROUP BY e.EmployeeId
