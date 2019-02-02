@@ -1,4 +1,4 @@
-#Interpret a Data Visualization
+# Interpret a Data Visualization
 
 In this project, you’ll explore an interactive data dashboard to uncover insights. You’ll write a short report explaining each insight, and how you found the information to reach your conclusion from the dashboard.
 
@@ -7,8 +7,8 @@ A large part of working with data is being able to interpret data visualizations
 
 ### Dashboards
 
-(Malaria in Africa)[https://public.tableau.com/en-us/s/gallery/malaria-africa?gallery=featured]
+[Malaria in Africa](https://public.tableau.com/en-us/s/gallery/malaria-africa?gallery=featured)
 
-(Madrid in Detail)[https://public.tableau.com/en-us/s/gallery/madrid-details?gallery=featured]
+[Madrid in Detail](https://public.tableau.com/en-us/s/gallery/madrid-details?gallery=featured)
 
-(LinkedIn Top Skills)[https://public.tableau.com/profile/matt.chambers#!/vizhome/LinkedInTopSkills2016-MakeoverMonday/LinkedInTopSkills2016-MakeoverMonday]
+[LinkedIn Top Skills](https://public.tableau.com/profile/matt.chambers#!/vizhome/LinkedInTopSkills2016-MakeoverMonday/LinkedInTopSkills2016-MakeoverMonday)
