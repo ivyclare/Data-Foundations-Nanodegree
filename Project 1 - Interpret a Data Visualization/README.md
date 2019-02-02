@@ -1,4 +1,4 @@
-#Interpret a Data Visualization
+# Interpret a Data Visualization
 
 In this project, you’ll explore an interactive data dashboard to uncover insights. You’ll write a short report explaining each insight, and how you found the information to reach your conclusion from the dashboard.
 
