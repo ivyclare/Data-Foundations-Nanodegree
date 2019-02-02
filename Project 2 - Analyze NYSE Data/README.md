@@ -7,12 +7,12 @@ In this project, you will analyze a real dataset about current Udacity students 
 
 Prepare with the descriptive statistics and spreadsheets lessons leading up to the project.
 
-## What skills will I use?
+## What skills Will I Learn?
 After completing the lessons and the project, you should feel comfortable in your ability to:
 
-Identify different datatypes to determine what analyses are possible.
-Calculate measures of center and spread to describe quantitative data.
-Use a variety of spreadsheet functionality to gain insights from data.
-Build charts and graphs to communicate the results of your analysis
-Be comfortable posing questions that can be answered with a given dataset and then answering those questions
-Analyze a future dataset using Excel
+- Identify different datatypes to determine what analyses are possible.
+- Calculate measures of center and spread to describe quantitative data.
+- Use a variety of spreadsheet functionality to gain insights from data.
+- Build charts and graphs to communicate the results of your analysis
+- Be comfortable posing questions that can be answered with a given dataset and then answering those questions
+- Analyze a future dataset using Excel
